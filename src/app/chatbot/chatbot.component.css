@@ -1,0 +1,32 @@
+#icon{
+    cursor: pointer;
+    z-index:3;
+    position: fixed;
+    margin-top: 550px;
+    margin-left: 1250px;
+   }
+
+
+#icon:hover{
+    transform: scale(1.05);
+  }
+#chat{
+    cursor: pointer;
+    z-index:3;
+    animation: fadeInAnimation  linear 0.3s;
+    animation-direction : alternate;
+    position: fixed;
+    margin-top: 100px;
+    margin-left: 900px;
+}
+@keyframes fadeInAnimation {
+    0% {
+      transform: scale(0.5);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+
+  }
