@@ -1,7 +1,7 @@
 <nav id="navbar-main"
   class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-light headroom headroom--top headroom--pinned">
   <div class="container">
-    <a class="navbar-brand mr-lg-5" [routerLink]="['/landing']">
+    <a class="navbar-brand mr-lg-5" [routerLink]="['/home']">
       <span class="nav-link-inner--text">Home</span>
     </a>
     <button class="navbar-toggler" type="button" (click)="isCollapsed = !isCollapsed"
@@ -70,11 +70,13 @@
         <li class="nav-item dropdown">
           <a class="nav-link no-caret" data-toggle="dropdown" role="button">
             <i class="ni ni-collection d-lg-none"></i>
-            <span class="nav-link-inner--text">User</span>
+            <span class="nav-link-inner--text">Online Learning</span>
           </a>
           <div class="dropdown-menu">
-            <a [routerLink]="['#']" class="dropdown-item">Profile</a>
-            <a [routerLink]="['/login']" class="dropdown-item">Logout</a>
+            <a href="https://www.datacamp.com/" class="dropdown-item" target="_blank">Datacamp</a>
+            <a href="https://www.udemy.com/" class="dropdown-item" target="_blank">Udemy</a>
+            <a href="https://www.coursera.org/" class="dropdown-item" target="_blank">Coursera</a>
+            <a href="https://www.youtube.com/" class="dropdown-item" target="_blank">YouTube</a>
           </div>
         </li>
       </ul>

@@ -43,8 +43,6 @@ export class LandingComponent implements OnInit {
 
 
   ngOnInit() {
-    this.shared.sendMessage(this.link);
-    alert(this.link)
     window.scrollTo(0, 0);
   }
   pickRandom() {
@@ -63,7 +61,7 @@ export class LandingComponent implements OnInit {
       this.toastr.warning(" Generate a link please", "Link")
     } else {
       this.options = {
-        roomName: this.randomString,
+        roomName: "HGFfEFR7FplSoQRDBCV98_CaPo",
         width: 1050,
         height: 550,
         parentNode: document.querySelector('#container1'),
