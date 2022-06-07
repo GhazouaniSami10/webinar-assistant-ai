@@ -36,7 +36,7 @@ export class HomeComponent implements OnInit {
   }
   toggleDisplayDiv() {
     this.isShowDiv = !this.isShowDiv;
-    if(!this.isShowDiv)
+    if(this.isShowDiv)
       {document.getElementById("ico").className="fa fa-times";
     }else{
       document.getElementById("ico").className="fa fa-comments";

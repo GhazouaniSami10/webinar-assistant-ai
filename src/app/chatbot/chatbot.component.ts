@@ -10,9 +10,10 @@ export class ChatbotComponent implements OnInit {
   constructor() { }
   isShowDiv = true;
   ngOnInit(): void {
- 
+
+    
   var chatroom = new window.Chatroom({
-    host: "http://localhost:5005",
+    host: "https://rasaassistantai.herokuapp.com",
     title: "Sara",
     container: document.querySelector(".chat-container"),
     welcomeMessage: "Hi! my name is Sara, i can assist you in : AI domain , tassahil informations and webinars details .",
@@ -25,7 +26,7 @@ export class ChatbotComponent implements OnInit {
 }
 toggleDisplayDiv() {
   this.isShowDiv = !this.isShowDiv;
-  if (!this.isShowDiv) {
+  if (this.isShowDiv) {
     document.getElementById("ico").className = "fa fa-times";
   } else {
     document.getElementById("ico").className = "fa fa-comments";
