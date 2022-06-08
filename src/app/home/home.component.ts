@@ -21,7 +21,7 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
   var chatroom = new window.Chatroom({
-    host: "http://localhost:5005",
+    host: "https://rasaassistantai.herokuapp.com",
     title: "Sara",
     container: document.querySelector(".chat-container"),
     welcomeMessage: " Hi! my name is Sara, i can assist you in : AI domain , tassahil informations and webinars details .",
