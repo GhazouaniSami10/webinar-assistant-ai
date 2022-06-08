@@ -1,1 +1,1 @@
-# WebinarPlatform
+# WebinarAssistant AI
